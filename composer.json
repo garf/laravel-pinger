@@ -1,0 +1,22 @@
+{
+    "name": "gaaarfild/laravel-conf",
+    "description": "Ping search engines about website updates",
+    "keywords": ["laravel", "ping", "search engines", "google", "yahoo", "yandex", "bing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dinar Garipov",
+            "email": "garipov.dinar@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": ">=4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gaaarfild\\LaravelPinger\\": "src/"
+        }
+    }
+}
