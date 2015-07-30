@@ -1,5 +1,5 @@
 {
-    "name": "gaaarfild/laravel-conf",
+    "name": "gaaarfild/laravel-pinger",
     "description": "Ping search engines about website updates",
     "keywords": ["laravel", "ping", "search engines", "google", "yahoo", "yandex", "bing"],
     "license": "MIT",
