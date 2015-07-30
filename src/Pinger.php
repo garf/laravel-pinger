@@ -62,6 +62,13 @@ class Pinger
         return $this->_sendPing('http://ping.weblogs.se/', $xml);
     }
 
+    public function ping($service_url, $title, $url, $rss = null)
+    {
+        $xml = $this->_getXml($title, $url, $rss);
+
+        return $this->_sendPing($service_url, $xml);
+    }
+
     public function pingAll($title, $url, $rss = null)
     {
         $xml = $this->_getXml($title, $url, $rss);
