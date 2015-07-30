@@ -48,7 +48,7 @@ If you want to use `Pinger` facade, add to same file at the `aliases` section
 #### Sending to all services at once
 
 ``` php
-Pinger::pingAll('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingAll('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 #### Send pings to separate services
@@ -56,37 +56,37 @@ Pinger::pingAll('Title of post', 'http://url.of/your-post', 'http://url.of/your-
 **Google**
 
 ``` php
-Pinger::pingGoogle('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingGoogle('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 **Yandex**
 
 ``` php
-Pinger::pingYandex('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingYandex('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 **Yahoo**
 
 ``` php
-Pinger::pingYahoo('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingYahoo('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 **Feedburner**
 
 ``` php
-Pinger::pingFeedburner('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingFeedburner('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 **Weblogs**
 
 ``` php
-Pinger::pingWeblogs('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::pingWeblogs('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 #### Ping any other service
 
 ``` php
-Pinger::ping('http://url.of/service', 'Title of post', 'http://url.of/your-post', 'http://url.of/your-rss');
+Pinger::ping('http://url.of/service', 'Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
 ## Contributions
