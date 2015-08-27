@@ -3,7 +3,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Laravel Version](https://img.shields.io/badge/laravel-5-orange.svg?style=flat-square)](http://laravel.com)
 
-![Laravel Pinger](http://0ez.ru/upload/mupEVr8Qrc.jpg)
+![Laravel Pinger](pinger.png)
 
 Weblog system blogs pinger for Laravel 5.
 
