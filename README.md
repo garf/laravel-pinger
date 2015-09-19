@@ -30,7 +30,7 @@ When update completed, add to your `config/app.conf` file to `providers` section
 ``` PHP
 'providers' => [
     // ...
-    Gaaarfild\LaravelPingers\LaravelPingerServiceProvider::class,
+    Gaaarfild\LaravelPinger\LaravelPingerServiceProvider::class,
 ]
 ```
 
