@@ -14,6 +14,9 @@ class LaravelPingerServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadViewsFrom(__DIR__ . '/views', 'laravel-pinger');
+        $this->publishes([
+            __DIR__ . '/config/config.php' => config_path('pinger.php'),
+        ], 'config');
     }
 
     /**
@@ -25,6 +28,9 @@ class LaravelPingerServiceProvider extends ServiceProvider
     {
         $this->registerLaravelPinger();
         $this->app->alias('pinger', \Gaaarfild\LaravelPinger\Pinger::class);
+        $this->mergeConfigFrom(
+            __DIR__ . '/config/config.php', 'pinger'
+        );
     }
 
     private function registerLaravelPinger()
