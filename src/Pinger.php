@@ -5,20 +5,19 @@ namespace Gaaarfild\LaravelPinger;
 use Illuminate\Support\Traits\Macroable;
 
 /**
- * Class Pinger
- * @package Gaaarfild\LaravelPinger
+ * Class Pinger.
  */
 class Pinger
 {
-
     use Macroable;
 
     private $services;
 
     /**
-     * Create new instance of Pinger class
+     * Create new instance of Pinger class.
      */
-    public function __construct() {
+    public function __construct()
+    {
         $this->services = config('pinger.services');
     }
 
@@ -71,6 +70,7 @@ class Pinger
         foreach ($this->services as $service) {
             $this->sendPing($service, $xml);
         }
+
         return true;
     }
 
@@ -78,11 +78,12 @@ class Pinger
     {
         $data = [
             'title' => $title,
-            'url' => $url,
+            'url'   => $url,
         ];
         if (!empty($rss)) {
             $data['rss'] = $rss;
         }
+
         return view('laravel-pinger::xml', $data)->render();
     }
 
