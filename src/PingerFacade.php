@@ -1,4 +1,6 @@
-<?php namespace Gaaarfild\LaravelPinger;
+<?php
+
+namespace Gaaarfild\LaravelPinger;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -7,12 +9,13 @@ use Illuminate\Support\Facades\Facade;
  */
 class PingerFacade extends Facade
 {
-
     /**
      * Get the registered name of the component.
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'pinger'; }
-
+    protected static function getFacadeAccessor()
+    {
+        return 'pinger';
+    }
 }
