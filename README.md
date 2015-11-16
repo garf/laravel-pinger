@@ -3,8 +3,6 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Laravel Version](https://img.shields.io/badge/laravel-5-orange.svg?style=flat-square)](http://laravel.com)
 
-![Laravel Pinger](pinger.png)
-
 Weblog system blogs pinger for Laravel 5.
 
 Easy way to notify search engines about your new or updated posts in blog.
