@@ -35,7 +35,7 @@ class LaravelPingerServiceProvider extends ServiceProvider
 
     private function registerLaravelPinger()
     {
-        $this->app->bindShared('pinger', function ($app) {
+        $this->app->singleton('pinger', function ($app) {
             return new Pinger();
         });
     }
