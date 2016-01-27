@@ -56,36 +56,35 @@ class Pinger
         return $this->sendPing('http://ping.weblogs.se/', $xml);
     }
 
-    public function pingPingOMatic($title,$url,$rss=null,$params=array())
+    public function pingPingOMatic($title, $url, $rss = null, $params = [])
     {
-   
-        $entity = array(
-                    "chk_weblogscom" => "on",
-                    "chk_blogs" => "on",
-                    "chk_feedburner" => "on",
-                    "chk_newsgator" => "on",
-                    "chk_myyahoo" => "on",
-                    "chk_pubsubcom" => "on",
-                    "chk_blogdigger" => "on",
-                    "chk_weblogalot" => "on",
-                    "chk_newsisfree" => "on",
-                    "chk_topicexchange" => "on",
-                    "chk_google" => "on",
-                    "chk_tailrank" => "on",
-                    "chk_skygrid" => "on",
-                    "chk_collecta" => "on",
-                    "chk_superfeedr" => "on"
-                );
+        $entity = [
+                    'chk_weblogscom'    => 'on',
+                    'chk_blogs'         => 'on',
+                    'chk_feedburner'    => 'on',
+                    'chk_newsgator'     => 'on',
+                    'chk_myyahoo'       => 'on',
+                    'chk_pubsubcom'     => 'on',
+                    'chk_blogdigger'    => 'on',
+                    'chk_weblogalot'    => 'on',
+                    'chk_newsisfree'    => 'on',
+                    'chk_topicexchange' => 'on',
+                    'chk_google'        => 'on',
+                    'chk_tailrank'      => 'on',
+                    'chk_skygrid'       => 'on',
+                    'chk_collecta'      => 'on',
+                    'chk_superfeedr'    => 'on',
+                ];
 
-        $entity['title']= urlencode($title);
+        $entity['title'] = urlencode($title);
         $entity['blogurl'] = urlencode($url);
         $entity['rssurl'] = urlencode($rss);
 
         $query_string = http_build_query(array_merge($entity, $params));
 
-        $service_url = "http://pingomatic.com/ping/?".$query_string;
+        $service_url = 'http://pingomatic.com/ping/?'.$query_string;
 
-        $this->sendPing($service_url,$query_string);
+        $this->sendPing($service_url, $query_string);
     }
 
     public function ping($service_url, $title, $url, $rss = null)
