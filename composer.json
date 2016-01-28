@@ -1,7 +1,7 @@
 {
     "name": "gaaarfild/laravel-pinger",
     "description": "Ping search engines about website updates",
-    "keywords": ["laravel", "ping", "search engines", "google", "yahoo", "yandex", "bing"],
+    "keywords": ["laravel", "ping", "search engines", "google", "yahoo", "yandex", "bing", "pingomatic", "ping-o-matic"],
     "license": "MIT",
     "authors": [
         {
