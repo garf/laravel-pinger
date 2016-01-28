@@ -83,6 +83,19 @@ Pinger::pingFeedburner('Title of post', 'http://url.of/your-post', 'http://url.o
 Pinger::pingWeblogs('Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
+**PingOMatic**
+
+``` php
+    Pinger::pingPingOMatic(
+        'Title of post', 
+        'http://url.of/your-post', 
+        'http://url.of/your-rss(optional)', 
+        [
+            'additional' => 'params',
+            'to' => 'send',
+        ]);
+```
+
 #### Ping any other service
 
 ``` php
