@@ -84,7 +84,7 @@ class Pinger
 
         $service_url = 'http://pingomatic.com/ping/?'.$query_string;
 
-        $this->sendPing($service_url, $query_string);
+        return $this->sendPing($service_url, $query_string);
     }
 
     public function ping($service_url, $title, $url, $rss = null)
