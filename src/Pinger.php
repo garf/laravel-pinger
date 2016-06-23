@@ -113,7 +113,7 @@ class Pinger
             'title' => $title,
             'url'   => $url,
         ];
-        if (!empty($rss)) {
+        if (! empty($rss)) {
             $data['rss'] = $rss;
         }
 
