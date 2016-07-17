@@ -1,6 +1,6 @@
 <?php
 
-namespace Gaaarfild\LaravelPinger;
+namespace Garf\LaravelPinger;
 
 use Illuminate\Support\Traits\Macroable;
 

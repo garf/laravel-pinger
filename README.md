@@ -12,7 +12,7 @@ Easy way to notify search engines about your new or updated posts in blog.
 Add
 
 ``` JSON
-"gaaarfild/laravel-pinger": "1.*"
+"garf/laravel-pinger": "1.*"
 ```
 
 to your `composer.json` file into `require` section.
@@ -28,7 +28,7 @@ When update completed, add to your `config/app.conf` file to `providers` section
 ``` PHP
 'providers' => [
     // ...
-    Gaaarfild\LaravelPinger\LaravelPingerServiceProvider::class,
+    Garf\LaravelPinger\LaravelPingerServiceProvider::class,
 ]
 ```
 
@@ -37,7 +37,7 @@ If you want to use `Pinger` facade, add to same file at the `aliases` section
 ``` PHP
 'aliases' => [
     // ...
-  'Pinger' => Gaaarfild\LaravelPinger\PingerFacade::class,
+  'Pinger' => Garf\LaravelPinger\PingerFacade::class,
 ]
 ```
 
@@ -111,5 +111,5 @@ Send your pull requests to `master` branch.
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/gaaarfild/laravel-pinger/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/garf/laravel-pinger/blob/master/LICENSE) for more information.
 
