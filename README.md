@@ -12,7 +12,7 @@ Easy way to notify search engines about your new or updated posts in blog.
 Add
 
 ``` JSON
-"garf/laravel-pinger": "1.*"
+"garf/laravel-pinger": "2.*"
 ```
 
 to your `composer.json` file into `require` section.
