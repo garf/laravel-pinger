@@ -1,5 +1,5 @@
 {
-    "name": "gaaarfild/laravel-pinger",
+    "name": "garf/laravel-pinger",
     "description": "Ping search engines about website updates",
     "keywords": ["laravel", "ping", "search engines", "google", "yahoo", "yandex", "bing", "pingomatic", "ping-o-matic"],
     "license": "MIT",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Gaaarfild\\LaravelPinger\\": "src/"
+            "Garf\\LaravelPinger\\": "src/"
         }
     }
 }
