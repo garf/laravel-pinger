@@ -102,6 +102,11 @@ Pinger::pingWeblogs('Title of post', 'http://url.of/your-post', 'http://url.of/y
 Pinger::ping('http://url.of/service', 'Title of post', 'http://url.of/your-post', 'http://url.of/your-rss(optional)');
 ```
 
+## Further plans
+
+- clean the code 
+- create driver system for different services
+
 ## Contributions
 
 Contributions are highly appreciated.
