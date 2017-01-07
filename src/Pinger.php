@@ -113,7 +113,7 @@ class Pinger
             'title' => $title,
             'url'   => $url,
         ];
-        if (! empty($rss)) {
+        if (!empty($rss)) {
             $data['rss'] = $rss;
         }
 
@@ -128,7 +128,7 @@ class Pinger
         curl_setopt($ch, CURLOPT_TIMEOUT, 3);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
-        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0' );
+        curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0');
         $response = curl_exec($ch);
         curl_close($ch);
 
