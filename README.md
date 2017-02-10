@@ -39,7 +39,8 @@ If you want to use `Pinger` facade, add to same file at the `aliases` section
     // ...
   'Pinger' => Garf\LaravelPinger\PingerFacade::class,
 ]
-`
+```
+
 ### Publish with artsian
 
 ``` PHP
