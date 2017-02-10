@@ -32,6 +32,14 @@ When update completed, add to your `config/app.conf` file to `providers` section
 ]
 ```
 
+If you want to use `Pinger` facade, add to same file at the `aliases` section
+
+``` PHP
+'aliases' => [
+    // ...
+  'Pinger' => Garf\LaravelPinger\PingerFacade::class,
+]
+`
 ### Publish with artsian
 
 ``` PHP
@@ -41,14 +49,7 @@ Publishes a pinger.php file to config directory. Add and remove all your ping si
 Be sure to review the ping responses from the ping sites you add because there are many ping sites 
 and do not all provide a uniform response. Some may require additional parameters. Some may stop working.
 
-If you want to use `Pinger` facade, add to same file at the `aliases` section
-
-``` PHP
-'aliases' => [
-    // ...
-  'Pinger' => Garf\LaravelPinger\PingerFacade::class,
-]
-```
+``
 
 ## Usage
 
