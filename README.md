@@ -23,7 +23,7 @@ Then type in console
 $ composer update
 ```
 
-When update completed, add to your `config/app.conf` file to `providers` section
+When update completed, add to your `config/app.php` file to `providers` section
 
 ``` PHP
 'providers' => [
@@ -41,7 +41,7 @@ If you want to use `Pinger` facade, add to same file at the `aliases` section
 ]
 ```
 
-## Publish with artsian
+## Publish with artisan
 
 ``` PHP
 php artisan vendor:publish
